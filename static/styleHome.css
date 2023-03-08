@@ -1,0 +1,220 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    /* ANOTHER COMBO */
+    --primary-color: #243669;
+    --secondary-color: #FFC43E;
+    --third-color: #99ced3;
+    --logo-color: #6dd0ff;
+}
+
+#form-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#left-div-inside-form-section {
+    width: 50%;
+    background-color: #ffb997;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 5rem 0 0 1rem;
+    height: 100%;
+}
+
+.blue-line-below-headings {
+    border-top: 7px solid var(--primary-color);
+    display: block;
+    width: 81px;
+    margin-bottom: 2rem;
+}
+
+#containing-form-details {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left-div-inside-form-section h1 {
+    font-family: 'Slabo 27px', serif, sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+
+/* MAIN CONTACT FORM FROM HERE */
+
+.main-div-containing-form-inside-form-section {
+    width: 50%;
+    background-color: #f67e7d;
+    height: fit-content;
+    display: flex;
+    /* padding: 5rem 0; */
+    align-items: center;
+    height: 100%;
+}
+
+.main-div-containing-form-inside-form-section>div {
+    margin: 0px 100px 0px -100px;
+    padding: 55px 55px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.19);
+    width: 65%;
+}
+
+.main-div-containing-form-inside-form-section form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-form-box {}
+
+.input-text {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 1.2rem;
+    padding: 0 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.input-text input {
+    font-family: 'Slabo 27px', serif, sans-serif;
+    background-color: rgb(33 63 86 / 40%);
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.input-text input::placeholder {
+    color: var(--primary-color);
+}
+
+.input-textarea {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    padding: 0 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.input-textarea textarea {
+    width: 100%;
+    background-color: rgb(33 63 86 / 40%);
+    font-family: 'Slabo 27px', serif, sans-serif;
+    font-size: 1rem;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.input-textarea textarea::placeholder {
+    color: var(--primary-color);
+}
+
+input,
+select,
+textarea {
+    color: var(--primary-color);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.submit-button button {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.7rem 0;
+    outline: none;
+    border: 3px solid var(--primary-color);
+    background-color: rgba(0, 41, 73, 0);
+    color: var(--primary-color);
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: 'Slabo 27px', serif, sans-serif;
+}
+
+.submit-button button:hover {
+    background-color: rgb(33 63 86 / 40%);
+    color: #ffffff;
+    border-color: rgb(33 63 86 / 0%);
+}
+
+.errors {
+    display: flex;
+    border: 2px solid #dac9c9;
+    align-items: center;
+    background-color: #a98633;
+    justify-content: space-between;
+    margin: 3px 0px;
+    margin-top: 10px;
+    padding: 0 10px;
+    padding-right: 0;
+}
+
+.error-message {
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 700;
+}
+
+.error-cross {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-left: 10px;
+}
+
+.error-cross:hover {
+    background-color: #ab3a3a;
+}
+
+@media only screen and (max-width:1080px) {
+    #left-div-inside-form-section h1 {
+        font-size: 1.8rem;
+    }
+    #left-div-inside-form-section {
+        align-items: center;
+        justify-content: center;
+    }
+    .main-div-containing-form-inside-form-section {
+        padding: 0;
+    }
+    .main-div-containing-form-inside-form-section>div {
+        margin: 0px 45px 0px -45px;
+        padding: 30px 24px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.19);
+        width: 92%;
+    }
+    .input-text input {
+        font-size: 0.7rem;
+    }
+    .submit-button button {
+        font-size: 1rem;
+    }
+    textarea {
+        height: 8rem;
+        width: 50rem;
+    }
+}
