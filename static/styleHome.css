@@ -6,9 +6,6 @@
 :root {
     /* ANOTHER COMBO */
     --primary-color: #243669;
-    --secondary-color: #FFC43E;
-    --third-color: #99ced3;
-    --logo-color: #6dd0ff;
 }
 
 #form-section {
@@ -160,34 +157,6 @@ textarea {
     border-color: rgb(33 63 86 / 0%);
 }
 
-.errors {
-    display: flex;
-    border: 2px solid #dac9c9;
-    align-items: center;
-    background-color: #a98633;
-    justify-content: space-between;
-    margin: 3px 0px;
-    margin-top: 10px;
-    padding: 0 10px;
-    padding-right: 0;
-}
-
-.error-message {
-    font-size: 20px;
-    font-family: 'Slabo 27px', serif;
-    font-weight: 700;
-}
-
-.error-cross {
-    font-size: 25px;
-    cursor: pointer;
-    padding: 8px 16px;
-    margin-left: 10px;
-}
-
-.error-cross:hover {
-    background-color: #ab3a3a;
-}
 
 @media only screen and (max-width:1080px) {
     #left-div-inside-form-section h1 {
