@@ -1,7 +1,9 @@
 const express = require("express");
+//FOR RENDERING HTML FILE
 const path = require("path")
 const fetch = require('node-fetch');
-var bodyParser = require('body-parser');
+//FOR GETTING INPUT FROM HTML FORM
+const bodyParser = require('body-parser');
 const router = express.Router();
 const dotenv = require('dotenv');
 dotenv.config();
@@ -18,7 +20,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-
+//MAIN GET ROUTE
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/home.html'));
 });
@@ -46,7 +48,7 @@ router.post('/', (req, res) => {
 })
 
 
-
+//THIS FUNCTION WILL PLACE A POST REQUEST ON TRELLO AND WILL CREATE A CARD ON TRELLO BOARD
 function createCard(payload) {
     fetch('https://api.trello.com/1/cards', {
             method: 'POST',
@@ -67,6 +69,7 @@ function createCard(payload) {
 
 }
 
+//THIS FUNCTION IS USED FOR DISPLAYING ERROR IN THE FRONT END
 function htmlCodeForError(statusCode, errorMessage) {
     return `<!DOCTYPE html>
     <html lang="en">
